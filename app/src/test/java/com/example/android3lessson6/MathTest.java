@@ -42,18 +42,18 @@ public class MathTest {
 
     @Test
     public void addIncludingMinusTestCase() {
-        assertEquals("negative number occurred", math.add("-5", "3"));
+        assertEquals("Error, negative number occurred", math.add("-5", "3"));
 
     }
 
     @Test
     public void isDividedByZero() {
-        assertEquals("you can't divide by zero", math.dividedByZero("2", "0"));
+        assertEquals("Error,you can't divide by zero", math.dividedByZero("2", "0"));
     }
 
     @Test
     public void doesIncludeSpecialCharacters() {
-        assertEquals("special characters have been detected", math.areSymbolsIncluded("!@#@0!#@!2", "456"));
+        assertEquals("Error,special characters have been detected", math.areSymbolsIncluded("!@#@0!#@!2", "456"));
     }
 
     @After

@@ -37,7 +37,7 @@ public class MathTest {
 
     @Test
     public void addIncludingSpacesTestCase() {
-        assertEquals("17", math.add("      12", "5"));
+        assertEquals("17", math.add("12", "5"));
     }
 
     @Test
@@ -48,7 +48,7 @@ public class MathTest {
 
     @Test
     public void isDividedByZero() {
-        assertEquals("Error,you can't divide by zero", math.dividedByZero("2", "0"));
+        assertEquals("Error,you can't divide by zero", math.divide("2", "0"));
     }
 
     @Test
